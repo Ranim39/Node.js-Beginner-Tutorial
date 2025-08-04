@@ -17,3 +17,9 @@ const sayHi =(name)=>{
 module.exports={john ,peter}
 module.exports=sayHi
 console.log(module);
+
+const utils = require('./3-utils');
+
+utils.sayHi('John');        
+console.log(utils.add(5, 7)); 
+console.log(utils.PI);    

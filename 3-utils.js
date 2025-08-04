@@ -1,6 +1,11 @@
-const _= require('lodash')
+const sayHi = (name) => {
+    console.log(`Hello there, ${name}`);
+};
 
+const add = (a, b) => {
+    return a + b;
+};
 
-const items=[1,[2,[3,[4]]]]
-const newItems=_.flattenDeep(items);
-console.log(newItems)
+const PI = 3.14;
+
+module.exports = { sayHi, add, PI };
