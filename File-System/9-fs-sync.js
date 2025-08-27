@@ -1,7 +1,4 @@
-//const fs=require('fs');
-//fs.readFileSync
 
-//or
 
 const{readFileSync,writeFileSync}=require('fs')
 
@@ -14,4 +11,3 @@ writeFileSync('./content/result-sync.txt',
   `Here is the result : ${first} , ${second}`,
   { flag:'a'}
 )
-//if the file exists then node will use it ,otherwise it will create one by default

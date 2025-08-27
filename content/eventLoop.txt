@@ -1,0 +1,12 @@
+How Node.js Event Loop Handles Many Requests
+
+1. Node.js is single-threaded for JavaScript, but uses an event loop for asynchronous tasks.
+2. When multiple users send requests (e.g. 1000 DB queries):
+   - Each query is sent asynchronously.
+   - Node.js does NOT wait for the database response.
+   - The event loop immediately moves on to handle the next request.
+3. When the database responds, its callback is added to the event loop queue.
+4. Node.js processes callbacks when the stack is free, sending the response to each user.
+
+Result:
+Node.js can handle thousands of concurrent requests without blocking, thanks to the event loop.

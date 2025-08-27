@@ -1,1 +1,6 @@
-/node_modules
+node_modules/
+content/big.txt
+content/result-sync.txt
+content/result-async.txt
+.env
+*.log

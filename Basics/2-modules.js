@@ -1,9 +1,6 @@
-//modules
 
-//share
 const john ='john'
 const peter='peter'
-//local
 const secretname='SECRET NAME'
 const sayHi =(name)=>{
   console.log(`Hello there ${name}`);
@@ -18,7 +15,7 @@ module.exports={john ,peter}
 module.exports=sayHi
 console.log(module);
 
-const utils = require('./3-utils');
+const utils = require('../Modules/3-utils');
 
 utils.sayHi('John');        
 console.log(utils.add(5, 7)); 

@@ -1,7 +1,4 @@
-//const fs=require('fs');
-//fs.readFileSync
 
-//or
 
 const{readFile,writeFile}=require('fs')
 
@@ -10,7 +7,6 @@ readFile('./content/first.txt','utf8',(err,result)=>{
     console.log(err)
     return
   }
-  //console.log(result)
 const first =result
 
 readFile('./content/second.txt','utf8',(err,result)=>{
